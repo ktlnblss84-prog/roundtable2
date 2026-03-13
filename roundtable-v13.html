@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Roundtable</title>
+<title>Roundtable 2</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -413,7 +413,7 @@ body {
     <button class="top-btn" onclick="toggleTheme()" title="Hell/Dunkel">◑</button>
   </div>
 
-  <div class="setup-title">Roundtable</div>
+  <div class="setup-title">Roundtable 2</div>
   <div class="setup-sub">Ein Gespräch zwischen Maschinen — moderiert von dir</div>
 
   <div class="setup-card">
@@ -442,7 +442,7 @@ body {
     <div class="key-hint">→ <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com</a> → API Key</div>
   </div>
 
-  <button class="start-btn" onclick="startRoundtable()">Gespräch beginnen →</button>
+  <button class="start-btn" onclick="startRoundtable 2()">Gespräch beginnen →</button>
 
   <div class="setup-card" style="margin-top:0">
     <div class="setup-model">
@@ -461,7 +461,7 @@ body {
 <!-- ── MAIN SCREEN ── -->
 <div id="mainScreen">
   <div class="top-bar">
-    <div class="top-title">Roundtable</div>
+    <div class="top-title">Roundtable 2</div>
     <div class="top-actions">
       <div class="save-indicator" id="saveIndicator" style="display:none">
         <div class="save-dot"></div><span>gespeichert</span>
@@ -917,7 +917,7 @@ function loadKeys() {
   }
 }
 
-function startRoundtable() {
+function startRoundtable 2() {
   Object.entries(MODELS).forEach(([id, m]) => {
     const val = document.getElementById(m.keyId).value.trim();
     if (val) {
@@ -1328,7 +1328,7 @@ function exportConversation() {
   const blob = new Blob([text], { type: 'text/plain' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `roundtable-${new Date().toISOString().split('T')[0]}.txt`;
+  a.download = `roundtable2-${new Date().toISOString().split('T')[0]}.txt`;
   a.click();
   hideSettings();
 }

@@ -442,7 +442,7 @@ body {
     <div class="key-hint">→ <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com</a> → API Key</div>
   </div>
 
-  <button class="start-btn" onclick="startRoundtable 2()">Gespräch beginnen →</button>
+  <button class="start-btn" onclick="startRoundtable()">Gespräch beginnen →</button>
 
   <div class="setup-card" style="margin-top:0">
     <div class="setup-model">
@@ -917,7 +917,7 @@ function loadKeys() {
   }
 }
 
-function startRoundtable 2() {
+function startRoundtable () {
   Object.entries(MODELS).forEach(([id, m]) => {
     const val = document.getElementById(m.keyId).value.trim();
     if (val) {
